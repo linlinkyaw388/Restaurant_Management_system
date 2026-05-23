@@ -25,10 +25,16 @@
                         {{ session('message') }}
             </div>
         @endif
-
-            <h3>Order Form</h3>
+            <div class="d-flex justify-content-between">
+                <h3>Order Form</h3>
+            <form action="logout" method="POST" class="my-end">
+            @csrf
+              <button class="btn btn-default" type="submit">Logout</button>
+            </form>
+            </div>
+            
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-12">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="card card-primary card-tabs">
               <div class="card-header p-0 pt-1">
                 <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
@@ -48,7 +54,7 @@
                         @csrf 
                         <div class="row">
                             @foreach($dishes as $dish)
-                                <div class="col-sm-3">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
                                     <div class="card">
                                         <div class="card-body">
                                             <img src="{{url('/images/'.$dish->image)}}" style="width: 100px; height: 100px;"><br>
@@ -61,15 +67,17 @@
                         </div>
                             
 
-                            <div class="form-group">
-                                <select name="table" id="">
+                            <div class="form-group d-flex justify-content-between">
+                                <select name="table" id="" class="form-control mr-2">
+                                  <option value="">Select Table</option>
                                     @foreach($table as $table)
-                                        <option value="{{$table->id}}">{{$table->number}}</option>
+                                        
+                                        <option value="{{$table->id}}">Table : {{$table->number}}</option>
                                     @endforeach
                                 </select>
-                            </div>
                             
-                            <input type="submit" class="btn btn-success" value="Submit">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
                             
                         
                     </form>
@@ -113,6 +121,7 @@
         
         <!-- /.row -->
         </div>
+
     </div>
 </body>
 <!-- jQuery -->
