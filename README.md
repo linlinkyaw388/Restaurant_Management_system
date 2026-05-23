@@ -4,17 +4,30 @@ A robust and intuitive Web-Based Restaurant Management System built with the Lar
 
 ---
 
+## 🌐 Live Demo
+
+You can access the live deployment of this project directly through the link below:
+
+🔗 **Live Link:** [http://linlinkyaw.infinityfreeapp.com/](http://linlinkyaw.infinityfreeapp.com/)
+
+---
+
+## 🔐 Demo Credentials
+
+
 ## 🚀 Tech Stack
 
 ### Backend
 * **Framework:** Laravel (PHP MVC Framework)
 * **Language:** PHP
+* **AI Powered:** Supermaven (autocomplete)
 
 ### Frontend & UI
 * **Admin Template:** AdminLTE v3
 * **CSS Framework:** Bootstrap 4
 * **Interactions:** jQuery
 * **Data Management:** DataTables (Responsive & Searchable Layouts)
+* **Key:** Role Base Authentication
 
 ---
 
