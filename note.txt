@@ -42,3 +42,16 @@ Restaurent_Management_system
 ->php artisan make:model Order
 
 -php artisan make:controller OrderController
+
+-php artisan route:list
+
+-php artisan make:migration add_image_column_to_dishes_table
+-php artisan migrate
+
+-php artisan make:request DishCreateRequest
+
+route model blinding
+
+-name="order.form" route naming route တွေလိုက်နာရန်လို။
+
+-php artisan make:model Table
