@@ -8,7 +8,7 @@ A robust and intuitive Web-Based Restaurant Management System built with the Lar
 
 You can access the live deployment of this project directly through the link below:
 
-🔗 **Live Link:** [http://linlinkyaw.infinityfreeapp.com/](http://linlinkyaw.infinityfreeapp.com/)
+🔗 **Live Link:** [http://linlinkyaw.infinityfreeapp.com](http://linlinkyaw.infinityfreeapp.com)
 
 ---
 
